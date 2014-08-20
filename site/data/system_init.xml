@@ -7,6 +7,11 @@
 	<module name="page_info" order="3" preload="yes"/>
 	<module name="language_menu" order="4" preload="yes"/>
 	<module name="captcha" order="0" preload="no"/>
+	<module name="articles" order="1" preload="no"/>
+	<module name="gallery" order="2" preload="no"/>
+	<module name="swfobject" order="3" preload="no"/>
+	<module name="youtube" order="4" preload="no"/>
+	<module name="contact_form" order="5" preload="no"/>
 	
 	<user 
 		fullname="Administrator" 

@@ -1,7 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/section.dtd">
 <document>
 	<section name="home">
-		<language name="all" file="home.xml" />
+		<language name="all" file="home.xml"/>
+	</section>
+	<section name="download">
+		<language name="all" file="home.xml"/>
+	</section>
+	<section name="plugins">
+		<language name="all" file="home.xml"/>
+	</section>
+	<section name="screenshots">
+		<language name="all" file="screenshots.xml"/>
+	</section>
+	<section name="contact">
+		<language name="all" file="contact.xml"/>
 	</section>
 </document>

@@ -1,7 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
 	<language name="English" short="en" default="yes">
-		<constant name="site_title">Site title</constant>
+		<constant name="site_title">Sunflower</constant>
+		<constant name="copyright"><![CDATA[Copyright &copy; 2014. by Mladen Mijatov and contributors.]]></constant>
+		<constant name="license"><![CDATA[Released under GNU General Public License.]]></constant>
+
+		<constant name="software">Sunflower</constant>
+		<constant name="description">Twin-panel file manager</constant>
+		<constant name="version">Version:&amp;nbsp;</constant>
+
+		<constant name="menu_download">Download</constant>
+		<constant name="menu_source">Source code</constant>
+		<constant name="menu_plugins">Plugins</constant>
+		<constant name="menu_screenshots">Screenshots</constant>
+		<constant name="menu_contact">Contact</constant>
+		<constant name="menu_bugs">Bugs</constant>
+
+		<constant name="label_call_to_action">Download</constant>
+		<constant name="label_version">Current version:</constant>
+
+		<constant name="release_latest">Latest release</constant>
+		<constant name="release_fresh">Fresh from repo</constant>
+		<constant name="release_source">Get source</constant>
+
+		<constant name="title_screenshots">Screenshots</constant>
+		<constant name="title_features">Features</constant>
+
+		<!-- Features -->
+		<constant name="feature_customizable">Customizable</constant>
+		<constant name="feature_tabs">Tabbed interface</constant>
+		<constant name="feature_sessions">Sessions</constant>
+		<constant name="feature_emblems">Emblems</constant>
+		<constant name="feature_terminal">Built-in terminal</constant>
+		<constant name="feature_threading">Mutlithreading</constant>
+		<constant name="feature_python">Python and GTK+</constant>
+		<constant name="feature_keyboard">Keyboard oriented</constant>
+
+		<constant name="description_customizable">Feature-packed configuration to help make the program your own.</constant>
+		<constant name="description_tabs">More flexibility in your daily operations through easy to use interface.</constant>
+		<constant name="description_sessions">Set of tabs for every occasion.</constant>
+		<constant name="description_emblems">Visually mark your files and directories for quick referrence.</constant>
+		<constant name="description_terminal">Quick access to command line interface through terminal tabs, VTE or external.</constant>
+		<constant name="description_threading">Better multitasking with full multithreading support.</constant>
+		<constant name="description_python">Easily extensible with Python and GTK+.</constant>
+		<constant name="description_keyboard">Fully optimized for keyboard users.</constant>
 	</language>
 </document>
