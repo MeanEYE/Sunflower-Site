@@ -1,0 +1,298 @@
+/**
+ * Content Style Sheet
+ * Sunflower File Manager
+ *
+ * Copyright (c) 2014. by Mladen Mijatov
+ * Authors: Mladen Mijatov
+ */
+
+main {
+	display: block;
+	width: 1200px;
+
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+}
+
+main section#main {
+	display: inline-block;
+	vertical-align: top;
+	width: 800px;
+	min-height: 600px;
+}
+
+main aside {
+	display: inline-block;
+	vertical-align: top;
+	width: 380px;
+	height: 600px;
+
+	margin-left: 20px;
+}
+
+/**
+ * Sections
+ */
+main section {
+	margin-bottom: 20px;
+	padding: 15px;
+
+	border: 1px solid #e0e0e0;
+	border-radius: 3px;
+	background-color: white;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+section#headline {
+	display: inline-block;
+	vertical-align: top;
+	width: 558px;
+	min-height: 300px;
+
+	margin-right: 20px;
+}
+
+section#video {
+	display: inline-block;
+	vertical-align: top;
+	width: 568px;
+	min-height: 310px;
+
+	padding: 10px;
+
+	font-size: 0px;
+}
+
+section#contact_information {
+	display: inline-block;
+	vertical-align: top;
+	width: 558px;
+	min-height: 300px;
+
+	margin-right: 20px;
+}
+
+section#contact_form {
+	display: inline-block;
+	vertical-align: top;
+	width: 558px;
+	min-height: 300px;
+}
+
+section#features ul {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+
+	list-style-type: none;
+	list-style-image: none;
+}
+
+section#features ul li {
+	display: inline-block;
+	width: calc(25% - 10px);
+	vertical-align: top;
+
+	margin-right: 10px;
+
+	text-align: center;
+}
+
+section#features ul li h3 {
+	padding-top: 100px;
+}
+
+/**
+ * Contact form
+ */
+form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+form label input,
+form label textarea {
+	width: 300px;
+	padding: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	border: 1px solid #d0d0d0;
+	box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+	color: #606060;
+	font-family: Roboto;
+	transition: 0.3s all;
+}
+
+form label input:focus,
+form label textarea:focus {
+	outline: none;
+	border-color: #ee8e00;
+	box-shadow:
+		inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+		0px 0px 3px rgba(238, 142, 0, 1);
+}
+
+form label textarea {
+	resize: none;
+	width: 500px;
+	height: 150px;
+}
+
+form div.controls button {
+	margin-right: 10px;
+	padding: 7px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	position: relative;
+	top: 0px;
+
+	border: 0px;
+	border-radius: 3px;
+	background-color: #17458a;
+
+	color: white;
+	font-family: Roboto;
+	transition: 0.2s all;
+}
+
+form div.controls button:hover {
+	top: -5px;
+
+	background-color: #2265ca;
+	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+form div.controls button:focus {
+	outline: none;
+}
+
+form div.controls button:active {
+	top: 0px;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+
+	transition: 0.0s all;
+}
+
+/**
+ * Call to action
+ */
+a.call_to_action,
+a.call_to_action:visited {
+	display: inline-block;
+
+	margin-top: 10px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	border-radius: 3px;
+	background-color: green;
+
+	color: rgba(255, 255, 255, 0.7);
+	text-align: center;
+	text-decoration: none;
+}
+
+a.call_to_action span {
+	display: block;
+
+	color: white;
+	font-size: 2.5em;
+	line-height: 100%;
+}
+
+/**
+ * Video container
+ */
+div#video_container {
+	display: block;
+	width: 568px;
+	height: 310px;
+
+	font-size: 0px;
+}
+
+/**
+ * Gallery
+ */
+div.gallery a.screenshot {
+	display: inline-block;
+	vertical-align: top;
+	width: 100px;
+
+	margin-right: 10px;
+	margin-top: 10px;
+	padding: 10px;
+	padding-top: 90px;
+
+	border: 1px solid #e0e0e0;
+	border-radius: 2px;
+	background-position: center 10px;
+	background-repeat: no-repeat;
+
+	color: #909090;
+	font-size: 0.8em;
+	font-family: Roboto Condensed;
+	text-align: center;
+	text-decoration: none;
+
+	transition: 0.3s all;
+}
+
+div.gallery a.screenshot:hover {
+	border-color: #ee8e00;
+	box-shadow: 0px 0px 3px rgba(238, 142, 0, 1);
+}
+
+/**
+ * Light box
+ */
+div#lightbox div.title_bar div.title {
+	padding: 0px;
+
+	color: white;
+	background-color: transparent;
+
+	font-weight: normal;
+	font-family: Roboto Condensed;
+}
+
+div#lightbox div.content {
+	border-radius: 5px;
+	background-color: #2265ca;
+}
+
+div#lightbox div.content.loading {
+	background-image: url(../images/loading.gif);
+}
+
+div#lightbox a.button.previous {
+	background-image:
+			url(../modules/gallery/images/previous.png),
+			linear-gradient(90deg, white 0%, white 70%, #2265ca 100%);
+}
+
+div#lightbox a.button.next {
+	background-image:
+			url(../modules/gallery/images/next.png),
+			linear-gradient(270deg, white 0%, white 70%, #2265ca 100%);
+}
+
+/**
+ * General elements.
+ */
+a {
+	color: #2265ca;
+}
+
+a:visited {
+	color: #17458a;
+}
+
+a:hover {
+	text-decoration: none;
+}
