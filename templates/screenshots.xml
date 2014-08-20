@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/template.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title>
+				<cms:text constant="site_title"/>
+				<cms:raw text=" - "/>
+				<cms:text constant="menu_screenshots"/>
+			</title>
+			<cms:collection include="animation_chain"/>
+			<cms:script src="_BASEURL.'/scripts/gallery.js'" cms:eval="src"/>
+			<cms:module name="page_info" action="set_omit_elements" elements="language,copyright"/>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body>
+			<cms:template file="parts/header.xml"/>
+
+			<main>
+				<!-- Show galleries -->
+				<cms:module
+					name="gallery"
+					action="show_group_list"
+					template="parts/gallery.xml"
+					order_by="id"
+					order_asc="0"
+				/>
+			</main>
+
+			<cms:template file="parts/footer.xml"/>
+		</body>
+	</html>
+</document>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
+<document>
+	<section class="screenshots">
+		<h2>
+			<span><cms:text constant="version"/></span>
+			<cms:var name="$params['name'][$language]"/>
+		</h2>
+
+		<div class="gallery">
+			<cms:image_list
+				group_id="$params['id']"
+				cms:eval="group_id"
+				template="parts/screenshot.xml"
+				/>
+		</div>
+	</section>
+</document>

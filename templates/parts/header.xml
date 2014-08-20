@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/template.dtd">
+<document>
+	<cms:raw file="sprites.svg" path="_BASEPATH.'/site/images/'" cms:eval="path"/>
+
+	<header>
+		<div class="wrap">
+			<!-- Logo -->
+			<a href="url_Make()" class="logo" cms:eval="href">
+				<span><cms:text constant="software"/></span>
+				<cms:text constant="description"/>
+			</a>
+
+			<!-- Main menu -->
+			<nav id="main">
+				<a
+					href="url_Make('', 'download')"
+					class="$section == 'download' ? 'active' : false"
+					cms:optional="class"
+					cms:eval="href"
+					>
+					<cms:text constant="menu_download"/>
+				</a>
+				<a href="https://github.com/MeanEYE/Sunflower" target="_blank">
+					<cms:text constant="menu_source"/>
+				</a>
+				<a href="https://github.com/MeanEYE/Sunflower/issues" target="_blank">
+					<cms:text constant="menu_bugs"/>
+				</a>
+				<a
+					href="url_Make('', 'plugins')"
+					class="$section == 'plugins' ? 'active' : false"
+					cms:optional="class"
+					cms:eval="href"
+					>
+					<cms:text constant="menu_plugins"/>
+				</a>
+				<a
+					href="url_Make('', 'screenshots')"
+					class="$section == 'screenshots' ? 'active' : false"
+					cms:optional="class"
+					cms:eval="href"
+					>
+					<cms:text constant="menu_screenshots"/>
+				</a>
+				<a
+					href="url_Make('', 'contact')"
+					class="$section == 'contact' ? 'active' : false"
+					cms:optional="class"
+					cms:eval="href"
+					>
+					<cms:text constant="menu_contact"/>
+				</a>
+			</nav>
+		</div>
+	</header>
+</document>

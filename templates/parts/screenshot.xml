@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
+<document>
+	<a
+		href="$params['image']"
+		title="$params['title'][$language]"
+		style="'background-image: url('.gallery::getThumbnailById($params['id'], null, 100).');'"
+		class="screenshot"
+		cms:eval="href,title,style"
+		>
+		<cms:var name="$params['title'][$language]"/>
+	</a>
+</document>

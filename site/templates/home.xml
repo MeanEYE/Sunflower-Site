@@ -1,15 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<!DOCTYPE document SYSTEM "../units/schema/template.dtd">
 <document>
 	<cms:var name="_DOCTYPE"/>
 	<html lang="$language" cms:eval="lang">
 		<head>
 			<title><cms:text constant="site_title"/></title>
+			<cms:collection include="animation_chain"/>
+			<cms:script src="_BASEURL.'/scripts/gallery.js'" cms:eval="src"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
-		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<h1>It works!</h1>
+		<body>
+			<cms:template file="parts/header.xml"/>
+
+			<main>
+				<!-- Headline article and video -->
+				<section id="headline">
+					<cms:module
+						name="articles"
+						action="show"
+						text_id="headline"
+						template="parts/article.xml"
+						/>
+
+					<a
+						href="url_Make('', 'download')"
+						class="call_to_action"
+						cms:eval="href"
+						>
+						<span><cms:text constant="label_call_to_action"/></span>
+						<cms:text constant="label_version"/>
+						<cms:raw text=" "/>
+						0.1a-57
+					</a>
+				</section>
+
+				<section id="video">
+					<div id="video_container"/>
+					<cms:module
+						name="youtube"
+						action="show"
+						random="1"
+						embed="1"
+						target="video_container"
+						theme="light"
+						autohide="0"
+						show_related="0"
+						width="568"
+						height="310"
+					/>
+				</section>
+
+				<!-- Screenshots-->
+				<section id="screenshots">
+					<h2><cms:text constant="title_screenshots"/></h2>
+
+					<div class="gallery">
+						<cms:module
+							name="gallery"
+							action="show_image_list"
+							order_by="id"
+							order_asc="0"
+							limit="8"
+							template="parts/screenshot.xml"
+						/>
+					</div>
+				</section>
+
+				<!-- Features -->
+				<section id="features">
+					<h2><cms:text constant="title_features"/></h2>
+
+					<ul>
+						<li>
+							<h3><cms:text constant="feature_customizable"/></h3>
+							<cms:text constant="description_customizable"/>
+						</li>
+						<li>
+							<h3><cms:text constant="feature_tabs"/></h3>
+							<cms:text constant="description_tabs"/>
+						</li>
+						<li>
+							<h3><cms:text constant="feature_sessions"/></h3>
+							<cms:text constant="description_sessions"/>
+						</li>
+						<li>
+							<h3><cms:text constant="feature_emblems"/></h3>
+							<cms:text constant="description_emblems"/>
+						</li>
+						<li>
+							<h3><cms:text constant="feature_terminal"/></h3>
+							<cms:text constant="description_terminal"/>
+						</li>
+						<li>
+							<h3><cms:text constant="feature_threading"/></h3>
+							<cms:text constant="description_threading"/>
+						</li>
+						<li>
+							<h3><cms:text constant="feature_python"/></h3>
+							<cms:text constant="description_python"/>
+						</li>
+						<li>
+							<h3><cms:text constant="feature_keyboard"/></h3>
+							<cms:text constant="description_keyboard"/>
+						</li>
+					</ul>
+				</section>
+
+			</main>
+
+			<cms:template file="parts/footer.xml"/>
 		</body>
 	</html>
 </document>

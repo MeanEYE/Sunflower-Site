@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/template.dtd">
+<document>
+	<footer>
+		<!-- Social media icons -->
+		<div class="social">
+			<a href="https://github.com/MeanEYE/Sunflower" class="github">
+				<svg viewBox="0 0 32 32">
+					<use xlink:href="#icon-github"/>
+				</svg>
+			</a>
+			<a href="https://plus.google.com/communities/100414586350485792644" class="google_plus">
+				<svg viewBox="0 0 32 32">
+					<use xlink:href="#icon-google_plus"/>
+				</svg>
+			</a>
+			<a href="https://twitter.com/meaneye_rcf" class="twitter">
+				<svg viewBox="0 0 32 32">
+					<use xlink:href="#icon-twitter"/>
+				</svg>
+			</a>
+		</div>
+
+		<!-- Copyright -->
+		<div class="copyright">
+			<cms:text constant="copyright"/>
+			<br/>
+			<cms:text constant="license"/>
+		</div>
+	</footer>
+</document>
