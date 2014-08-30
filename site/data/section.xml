@@ -4,7 +4,7 @@
 		<language name="all" file="home.xml"/>
 	</section>
 	<section name="download">
-		<language name="all" file="home.xml"/>
+		<language name="all" file="download.xml"/>
 	</section>
 	<section name="plugins">
 		<language name="all" file="home.xml"/>
