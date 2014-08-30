@@ -12,6 +12,7 @@
 	<module name="swfobject" order="3" preload="no"/>
 	<module name="youtube" order="4" preload="no"/>
 	<module name="contact_form" order="5" preload="no"/>
+	<module name="downloads" order="6" preload="no"/>
 	
 	<user 
 		fullname="Administrator" 
