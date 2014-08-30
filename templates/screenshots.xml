@@ -10,8 +10,7 @@
 				<cms:text constant="menu_screenshots"/>
 			</title>
 			<cms:collection include="animation_chain"/>
-			<cms:script src="_BASEURL.'/scripts/gallery.js'" cms:eval="src"/>
-			<cms:module name="page_info" action="set_omit_elements" elements="language,copyright"/>
+			<cms:script src="_BASEURL.'/site/scripts/gallery.js'" cms:eval="src"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
