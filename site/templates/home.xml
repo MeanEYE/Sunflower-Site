@@ -23,16 +23,11 @@
 						template="parts/article.xml"
 						/>
 
-					<a
-						href="url_Make('', 'download')"
-						class="call_to_action"
-						cms:eval="href"
-						>
-						<span><cms:text constant="label_call_to_action"/></span>
-						<cms:text constant="label_version"/>
-						<cms:raw text=" "/>
-						0.1a-57
-					</a>
+					<cms:module
+						name="downloads"
+						action="show_version"
+						template="parts/download_button.xml"
+					/>
 				</section>
 
 				<section id="video">
