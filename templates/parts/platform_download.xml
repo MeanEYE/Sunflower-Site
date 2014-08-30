@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
+<document>
+	<a
+		href="$params['url']"
+		title="$params['platform_name']"
+		class="'platform '.$params['platform']"
+		cms:eval="href,title,class"
+		>
+		<cms:var name="$params['platform_name']"/>
+	</a>
+</document>

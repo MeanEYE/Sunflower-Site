@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
+<document>
+	<strong>
+		<cms:var name="$params['version']"/>
+		<cms:raw text=" ("/>
+		<cms:var name="$params['build']"/>
+		<cms:raw text=")"/>
+	</strong>
+</document>

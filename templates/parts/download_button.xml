@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
+<document>
+	<a
+		href="url_Make('', 'download')"
+		class="call_to_action"
+		cms:eval="href"
+		>
+		<span><cms:text constant="label_call_to_action"/></span>
+		<cms:text constant="label_version"/>
+		<cms:raw text=" "/>
+		<cms:var name="$params['version']"/>
+		<small><cms:var name="$params['build']"/></small>
+	</a>
+</document>
