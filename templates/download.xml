@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/template.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title>
+				<cms:text constant="site_title"/>
+				<cms:raw text=" - "/>
+				<cms:text constant="menu_download"/>
+			</title>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body>
+			<cms:template file="parts/header.xml"/>
+
+			<main>
+				<section id="platforms">
+					<h1><cms:text constant="title_download"/></h1>
+					<p>
+						<cms:text constant="version_prefix"/>
+						<cms:module
+							name="downloads"
+							action="show_version"
+							template="parts/version.xml"
+							build="@$_REQUEST['build']"
+							cms:eval="build"
+						/>
+						<cms:text constant="version_suffix"/>
+					</p>
+
+					<cms:module
+						name="downloads"
+						action="platform_list"
+						template="parts/platform_download.xml"
+						build="@$_REQUEST['build']"
+						cms:eval="build"
+					/>
+
+					<small><cms:text constant="logo_copyright"/></small>
+				</section>
+
+				<section id="versions">
+					<h2><cms:text constant="title_versions"/></h2>
+
+					<table>
+					</table>
+				</section>
+			</main>
+
+			<cms:template file="parts/footer.xml"/>
+		</body>
+	</html>
+</document>
