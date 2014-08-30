@@ -62,9 +62,6 @@ nav#main {
 nav#main a {
 	display: inline-block;
 
-	position: relative;
-	top: 0px;
-
 	margin-left: 2px;
 	padding: 7px;
 	padding-left: 15px;
@@ -83,9 +80,9 @@ nav#main a.active {
 	background-color: #2265ca;
 }
 
+nav#main a:focus,
 nav#main a:hover {
-	top: -5px;
-
 	background-color: #2265ca;
 	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+	transform: translateY(-5px);
 }
