@@ -80,6 +80,29 @@ section#contact_form {
 	min-height: 300px;
 }
 
+section#platforms {
+	display: inline-block;
+	vertical-align: top;
+	width: 558px;
+	min-height: 600px;
+
+	margin-right: 20px;
+}
+
+section#platforms small {
+	display: block;
+	margin-top: 10px;
+
+	opacity: 0.5;
+}
+
+section#versions {
+	display: inline-block;
+	vertical-align: top;
+	width: 558px;
+	min-height: 600px;
+}
+
 section#features ul {
 	display: block;
 	margin: 0px;
@@ -131,8 +154,8 @@ form label textarea:focus {
 	outline: none;
 	border-color: #ee8e00;
 	box-shadow:
-		inset 2px 2px 5px rgba(0, 0, 0, 0.1),
-		0px 0px 3px rgba(238, 142, 0, 1);
+	inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+	0px 0px 3px rgba(238, 142, 0, 1);
 }
 
 form label textarea {
@@ -147,9 +170,6 @@ form div.controls button {
 	padding-left: 20px;
 	padding-right: 20px;
 
-	position: relative;
-	top: 0px;
-
 	border: 0px;
 	border-radius: 3px;
 	background-color: #17458a;
@@ -160,10 +180,9 @@ form div.controls button {
 }
 
 form div.controls button:hover {
-	top: -5px;
-
 	background-color: #2265ca;
 	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+	transform: translateY(-5px);
 }
 
 form div.controls button:focus {
@@ -195,6 +214,15 @@ a.call_to_action:visited {
 	color: rgba(255, 255, 255, 0.7);
 	text-align: center;
 	text-decoration: none;
+
+	transition: all 0.3s;
+}
+
+a.call_to_action:focus,
+a.call_to_action:hover {
+	background-color: #2265ca;
+	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+	transform: translateY(-5px);
 }
 
 a.call_to_action span {
@@ -203,6 +231,19 @@ a.call_to_action span {
 	color: white;
 	font-size: 2.5em;
 	line-height: 100%;
+}
+
+a.call_to_action small {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+a.call_to_action small:before {
+	content: '(';
+}
+
+a.call_to_action small:after {
+	content: ')';
 }
 
 /**
@@ -272,14 +313,14 @@ div#lightbox div.content.loading {
 
 div#lightbox a.button.previous {
 	background-image:
-			url(../modules/gallery/images/previous.png),
-			linear-gradient(90deg, white 0%, white 70%, #2265ca 100%);
+	url(../modules/gallery/images/previous.png),
+	linear-gradient(90deg, white 0%, white 70%, #2265ca 100%);
 }
 
 div#lightbox a.button.next {
 	background-image:
-			url(../modules/gallery/images/next.png),
-			linear-gradient(270deg, white 0%, white 70%, #2265ca 100%);
+	url(../modules/gallery/images/next.png),
+	linear-gradient(270deg, white 0%, white 70%, #2265ca 100%);
 }
 
 /**
@@ -296,3 +337,91 @@ a:visited {
 a:hover {
 	text-decoration: none;
 }
+
+/**
+ * Platforms
+ */
+
+a.platform {
+	display: inline-block;
+	width: calc((558px - 10px) / 6);
+	vertical-align: top;
+
+	padding: 10px;
+	padding-top: 110px;
+
+	border-radius: 3px;
+	background-position: center 20px;
+	background-repeat: no-repeat;
+	background-size: auto 80px;
+
+	text-align: center;
+	text-decoration: none;
+
+	transition: all 0.3s;
+}
+
+a.platform:hover {
+	background-color: #2265ca;
+	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+
+	color: white;
+	transform: translateY(-5px);
+}
+
+a.platform.debian {
+	background-image: url(../images/platform/debian.svg);
+}
+
+a.platform.ubuntu {
+	background-image: url(../images/platform/ubuntu.svg);
+}
+
+a.platform.mint {
+	background-image: url(../images/platform/mint.svg);
+}
+
+a.platform.elementary {
+	background-image: url(../images/platform/elementary.svg);
+}
+
+a.platform.redhat {
+	background-image: url(../images/platform/redhat.svg);
+}
+
+a.platform.centos {
+	background-image: url(../images/platform/centos.svg);
+}
+
+a.platform.fedora {
+	background-image: url(../images/platform/fedora.svg);
+}
+
+a.platform.mageia {
+	background-image: url(../images/platform/mageia.svg);
+}
+
+a.platform.mandriva {
+	background-image: url(../images/platform/mandriva.svg);
+}
+
+a.platform.opensuse {
+	background-image: url(../images/platform/opensuse.svg);
+}
+
+a.platform.pclinuxos {
+	background-image: url(../images/platform/pclinuxos.svg);
+}
+
+a.platform.gentoo {
+	background-image: url(../images/platform/gentoo.svg);
+}
+
+a.platform.arch {
+	background-image: url(../images/platform/arch.svg);
+}
+
+a.platform.tar {
+	background-image: url(../images/platform/archive.png);
+}
+
