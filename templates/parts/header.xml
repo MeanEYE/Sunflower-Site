@@ -22,6 +22,9 @@
 				<a href="https://github.com/MeanEYE/Sunflower" target="_blank">
 					<cms:text constant="menu_source"/>
 				</a>
+				<a href="https://transifex.com/projects/p/sunflower/" target="_blank">
+					<cms:text constant="menu_translations"/>
+				</a>
 				<a href="https://github.com/MeanEYE/Sunflower/issues" target="_blank">
 					<cms:text constant="menu_bugs"/>
 				</a>

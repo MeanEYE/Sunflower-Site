@@ -12,6 +12,7 @@
 
 		<constant name="menu_download">Download</constant>
 		<constant name="menu_source">Source code</constant>
+		<constant name="menu_translations">Translations</constant>
 		<constant name="menu_plugins">Plugins</constant>
 		<constant name="menu_screenshots">Screenshots</constant>
 		<constant name="menu_contact">Contact</constant>
