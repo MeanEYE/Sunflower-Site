@@ -29,6 +29,10 @@
 		<constant name="title_download">Download</constant>
 		<constant name="title_versions">All versions</constant>
 
+		<constant name="column_version">Version:</constant>
+		<constant name="column_build">Build number:</constant>
+		<constant name="column_files">Files:</constant>
+
 		<!-- Version strings -->
 		<constant name="version_prefix">Select operating system and distribution for which the&amp;nbsp;</constant>
 		<constant name="version_suffix">&amp;nbsp;version of Sunflower will be downloaded. If your distribution is not listed try downloading generic archive.</constant>
