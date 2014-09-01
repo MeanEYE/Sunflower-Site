@@ -96,13 +96,6 @@ section#platforms small {
 	opacity: 0.5;
 }
 
-section#versions {
-	display: inline-block;
-	vertical-align: top;
-	width: 558px;
-	min-height: 600px;
-}
-
 /**
  * Contact form
  */
@@ -290,14 +283,14 @@ div#lightbox div.content.loading {
 
 div#lightbox a.button.previous {
 	background-image:
-	url(../modules/gallery/images/previous.png),
-	linear-gradient(90deg, white 0%, white 70%, #2265ca 100%);
+		url(../../modules/gallery/images/previous.png),
+		linear-gradient(90deg, white 0%, white 70%, #2265ca 100%);
 }
 
 div#lightbox a.button.next {
 	background-image:
-	url(../modules/gallery/images/next.png),
-	linear-gradient(270deg, white 0%, white 70%, #2265ca 100%);
+		url(../../modules/gallery/images/next.png),
+		linear-gradient(270deg, white 0%, white 70%, #2265ca 100%);
 }
 
 /**
@@ -427,6 +420,7 @@ section#features ul li {
 }
 
 section#features ul li h3 {
+	margin-bottom: 5px;
 	padding-top: 120px;
 	position: relative;
 }
@@ -477,4 +471,57 @@ section#features ul li:nth-child(7) h3:before {
 
 section#features ul li:nth-child(8) h3:before {
 	background-image: url(../images/features/keyboard-oriented.svg);
+}
+
+/**
+ * List of all versions.
+ */
+section#versions {
+	display: inline-block;
+	vertical-align: top;
+	width: 558px;
+	min-height: 600px;
+}
+
+section#versions table {
+	width: 100%;
+
+	margin: 0px;
+	margin-top: 30px;
+	padding: 0px;
+	padding-bottom: 3px;
+
+	border-spacing: 0px;
+	border-bottom: 1px solid #2265ca;
+	border-bottom: 1px solid rgba(34, 101, 202, 0.3);
+}
+
+section#versions table th {
+	padding: 3px 5px;
+
+	text-align: left;
+	border-bottom: 1px solid #2265ca;
+	border-bottom: 1px solid rgba(34, 101, 202, 0.3);
+}
+
+section#versions table tr.active {
+	background-color: #f0f0f0;
+}
+
+section#versions table tr.active td:first-of-type:before {
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	content: '';
+
+	border: 5px solid transparent;
+	border-left-color: #2265ca;
+}
+
+section#versions table td {
+	padding: 3px 5px;
+}
+
+section#versions table a {
+	text-decoration: none;
 }
