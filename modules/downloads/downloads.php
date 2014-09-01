@@ -28,7 +28,7 @@ class downloads extends Module {
 	protected function __construct() {
 		parent::__construct(__FILE__);
 
-		$this->file_path = _BASEPATH.'/site/pub';
+		$this->file_path = _BASEPATH.'/pub';
 		$this->loadContent();
 	}
 
@@ -52,10 +52,6 @@ class downloads extends Module {
 		// global control actions
 		if (isset($params['action']))
 			switch ($params['action']) {
-				case 'show':
-					$this->tag_Download($params, $children);
-					break;
-
 				case 'show_list':
 					$this->tag_DownloadList($params, $children);
 					break;
@@ -169,6 +165,9 @@ class downloads extends Module {
 				}
 			}
 		}
+
+		// sort version list
+		krsort($this->version_list);
 
 		// store parsed data
 		$this->file_list = $data;
@@ -285,6 +284,33 @@ class downloads extends Module {
 	 * @param array $children
 	 */
 	public function tag_DownloadList($tag_params, $children) {
+		$builds = array_keys($this->file_list);
+		$template = $this->loadTemplate($tag_params, 'download_version.xml');
+
+		// check if build number was specififed
+		$current_build = null;
+		if (isset($tag_params['build']))
+			$current_build = fix_id($tag_params['build']);
+
+		// get highest build number
+		if (!in_array($current_build, $builds)) {
+			rsort($builds);
+			$current_build = $builds[0];
+		}
+
+		// parse template
+		foreach ($this->version_list as $build => $version) {
+			$params = array(
+					'build'		=> $build,
+					'version'	=> $version,
+					'selected'	=> $build == $current_build,
+					'files'		=> count($this->file_list[$build])
+				);
+
+			$template->restoreXML();
+			$template->setLocalParams($params);
+			$template->parse();
+		}
 	}
 
 	/**
