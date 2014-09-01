@@ -2,6 +2,9 @@
 <!DOCTYPE document SYSTEM "../../units/schema/template.dtd">
 <document>
 	<footer>
+		<!-- Include sprites -->
+		<cms:svg file="sprites.svg"/>
+
 		<!-- Social media icons -->
 		<div class="social">
 			<a href="https://github.com/MeanEYE/Sunflower" class="github">
@@ -20,6 +23,8 @@
 				</svg>
 			</a>
 		</div>
+
+		<pre>GPG Key - 4096R/83EFD5A0 - 3FA3 D5BE B3EA 719D 3CDC  D070 089E 4517 83EF D5A0</pre>
 
 		<!-- Copyright -->
 		<div class="copyright">
