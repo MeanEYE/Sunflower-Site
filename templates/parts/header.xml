@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../../units/schema/template.dtd">
 <document>
-	<cms:raw file="sprites.svg" path="_BASEPATH.'/site/images/'" cms:eval="path"/>
-
 	<header>
 		<div class="wrap">
 			<!-- Logo -->
@@ -27,6 +25,7 @@
 				<a href="https://github.com/MeanEYE/Sunflower/issues" target="_blank">
 					<cms:text constant="menu_bugs"/>
 				</a>
+				<!--
 				<a
 					href="url_Make('', 'plugins')"
 					class="$section == 'plugins' ? 'active' : false"
@@ -35,6 +34,7 @@
 					>
 					<cms:text constant="menu_plugins"/>
 				</a>
+				-->
 				<a
 					href="url_Make('', 'screenshots')"
 					class="$section == 'screenshots' ? 'active' : false"
