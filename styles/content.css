@@ -103,29 +103,6 @@ section#versions {
 	min-height: 600px;
 }
 
-section#features ul {
-	display: block;
-	margin: 0px;
-	padding: 0px;
-
-	list-style-type: none;
-	list-style-image: none;
-}
-
-section#features ul li {
-	display: inline-block;
-	width: calc(25% - 10px);
-	vertical-align: top;
-
-	margin-right: 10px;
-
-	text-align: center;
-}
-
-section#features ul li h3 {
-	padding-top: 100px;
-}
-
 /**
  * Contact form
  */
@@ -425,3 +402,79 @@ a.platform.tar {
 	background-image: url(../images/platform/archive.png);
 }
 
+/**
+ * Features
+ */
+section#features ul {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+
+	list-style-type: none;
+	list-style-image: none;
+}
+
+section#features ul li {
+	display: inline-block;
+	width: calc(25% - 10px);
+	vertical-align: top;
+
+	margin-right: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	text-align: center;
+}
+
+section#features ul li h3 {
+	padding-top: 120px;
+	position: relative;
+}
+
+section#features ul li h3:before {
+	width: 100px;
+	height: 100px;
+	content: '';
+
+	position: absolute;
+	left: 50%;
+	top: 10px;
+
+	margin-left: -50px;
+
+	background-position: left top;
+	background-size: 100px auto;
+	background-repeat: no-repeat;
+}
+
+section#features ul li:nth-child(1) h3:before {
+	background-image: url(../images/features/customizable.svg);
+}
+
+section#features ul li:nth-child(2) h3:before {
+	background-image: url(../images/features/tabbed-interface.svg);
+}
+
+section#features ul li:nth-child(3) h3:before {
+	background-image: url(../images/features/sessions.svg);
+}
+
+section#features ul li:nth-child(4) h3:before {
+	background-image: url(../images/features/emblems.svg);
+}
+
+section#features ul li:nth-child(5) h3:before {
+	background-image: url(../images/features/built-in-terminal.svg);
+}
+
+section#features ul li:nth-child(6) h3:before {
+	background-image: url(../images/features/multithreading.svg);
+}
+
+section#features ul li:nth-child(7) h3:before {
+	background-image: url(../images/features/python-and-gtk.svg);
+}
+
+section#features ul li:nth-child(8) h3:before {
+	background-image: url(../images/features/keyboard-oriented.svg);
+}
