@@ -24,7 +24,7 @@
 							name="downloads"
 							action="show_version"
 							template="parts/version.xml"
-							build="@$_REQUEST['build']"
+							build="$action"
 							cms:eval="build"
 						/>
 						<cms:text constant="version_suffix"/>
@@ -34,7 +34,7 @@
 						name="downloads"
 						action="platform_list"
 						template="parts/platform_download.xml"
-						build="@$_REQUEST['build']"
+						build="$action"
 						cms:eval="build"
 					/>
 
@@ -45,6 +45,18 @@
 					<h2><cms:text constant="title_versions"/></h2>
 
 					<table>
+						<tr>
+							<th><cms:text constant="column_version"/></th>
+							<th><cms:text constant="column_build"/></th>
+							<th><cms:text constant="column_files"/></th>
+						</tr>
+						<cms:module
+							name="downloads"
+							action="show_list"
+							template="parts/download_version.xml"
+							build="$action"
+							cms:eval="build"
+						/>
 					</table>
 				</section>
 			</main>
