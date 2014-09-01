@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
+<document>
+	<tr
+		class="$params['selected'] ? 'active' : false"
+		cms:eval="class"
+		>
+		<td>
+			<a
+				href="url_Make($params['build'], 'download')"
+				cms:eval="href"
+				>
+				<cms:text constant="software"/>
+				<cms:raw text=" "/>
+				<cms:var name="$params['version']"/>
+			</a>
+		</td>
+		<td>
+			<cms:var name="$params['build']"/>
+		</td>
+		<td>
+			<cms:var name="$params['files']"/>
+		</td>
+	</tr>
+</document>
