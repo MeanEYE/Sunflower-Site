@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="400px" height="400px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+<g id="keyboard-oriented">
+	<g>
+		
+			<radialGradient id="SVGID_1_" cx="1391.2354" cy="183.814" r="326.9875" gradientTransform="matrix(1.9687 0 0 1.9687 -2538.8811 157.8931)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#8A8A8A"/>
+			<stop  offset="0.1838" style="stop-color:#8C8C8C"/>
+			<stop  offset="0.25" style="stop-color:#939393"/>
+			<stop  offset="0.2972" style="stop-color:#9E9E9E"/>
+			<stop  offset="0.3354" style="stop-color:#AFAFAF"/>
+			<stop  offset="0.3677" style="stop-color:#C5C5C5"/>
+			<stop  offset="0.3956" style="stop-color:#DFDFDF"/>
+			<stop  offset="0.7308" style="stop-color:#DFDFDF"/>
+			<stop  offset="0.7649" style="stop-color:#E4E4E4"/>
+			<stop  offset="0.803" style="stop-color:#F1F1F1"/>
+			<stop  offset="0.8297" style="stop-color:#FFFFFF"/>
+			<stop  offset="0.8381" style="stop-color:#FCFCFC"/>
+			<stop  offset="1" style="stop-color:#C2C2C2"/>
+		</radialGradient>
+		<path fill="url(#SVGID_1_)" d="M400,360c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40C0,17.9,17.9,0,40,0h320
+			c22.1,0,40,17.9,40,40V360z"/>
+		
+			<radialGradient id="SVGID_2_" cx="1391.9591" cy="-143.2141" r="327.0365" gradientTransform="matrix(1.9687 0 0 1.9687 -2538.8811 157.8931)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#C2C2C2"/>
+			<stop  offset="0.2967" style="stop-color:#FFFFFF"/>
+			<stop  offset="0.4011" style="stop-color:#DFDFDF"/>
+			<stop  offset="0.7308" style="stop-color:#DFDFDF"/>
+			<stop  offset="0.7649" style="stop-color:#E4E4E4"/>
+			<stop  offset="0.803" style="stop-color:#F1F1F1"/>
+			<stop  offset="0.8297" style="stop-color:#FFFFFF"/>
+			<stop  offset="0.8381" style="stop-color:#FCFCFC"/>
+			<stop  offset="1" style="stop-color:#C2C2C2"/>
+		</radialGradient>
+		<path fill="url(#SVGID_2_)" d="M400,200.2V40c0-22.1-17.9-40-40-40H40C17.9,0,0,17.9,0,40v160.3H400z"/>
+		
+			<radialGradient id="SVGID_3_" cx="1466.3433" cy="79.814" r="218.1006" gradientTransform="matrix(1.9687 0 0 1.9687 -2538.8811 157.8931)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#ADADAD"/>
+			<stop  offset="0.1907" style="stop-color:#B5B5B5"/>
+			<stop  offset="0.478" style="stop-color:#CACACA"/>
+			<stop  offset="0.8245" style="stop-color:#EBEBEB"/>
+			<stop  offset="1" style="stop-color:#FFFFFF"/>
+		</radialGradient>
+		<path fill="url(#SVGID_3_)" d="M360,290.8c0,19.3-15.6,34.9-34.9,34.9H74.9c-19.3,0-34.9-15.7-34.9-34.9V40.6
+			C40,21.4,55.6,5.7,74.9,5.7h250.2c19.3,0,34.9,15.7,34.9,34.9V290.8z"/>
+		
+			<radialGradient id="SVGID_4_" cx="1306.4644" cy="-102.586" r="238.7539" gradientTransform="matrix(1.9687 0 0 1.9687 -2538.8811 157.8931)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#D4D4D4"/>
+			<stop  offset="0.2889" style="stop-color:#DADADA"/>
+			<stop  offset="0.6978" style="stop-color:#EDEDED"/>
+			<stop  offset="1" style="stop-color:#FFFFFF"/>
+		</radialGradient>
+		<path fill="url(#SVGID_4_)" d="M351.4,284.1c0,18.2-14.8,33-33,33H81.6c-18.2,0-33-14.8-33-33V47.3c0-18.2,14.8-33.1,33-33.1
+			h236.8c18.2,0,33,14.8,33,33.1V284.1z"/>
+	</g>
+	<rect x="0" fill="none" width="400" height="400"/>
+	<g>
+		<path fill="#445500" d="M255.8,187.6c20.8-33.8,49.9,21.8,59.3,26c-9.2-0.9-48.3,49.8-65.5,17.8
+			C249.6,230.3,255.3,187.3,255.8,187.6z"/>
+		<path fill="#445500" d="M131.1,183.3c-63.5-19.8-39,82.5-46.3,98.3c10.5-11.3,115.9,9.7,102.4-49.7
+			C186,230.3,131.4,182.3,131.1,183.3z"/>
+		<path fill="#FFCC00" d="M245,147.5c8.3-14,17.7-15,27.6-14.1c13.9,0.9,17.8,18,30.8,23.7c-13.5,6.2-14.8,19.3-26.3,23.4
+			c-13.7,3.8-25,0.3-32.2-10.3L245,147.5z"/>
+		<path fill="#FFCC00" d="M144.7,149c-8.3-14-17.7-15-27.6-14.1c-13.9,0.9-17.8,18-30.8,23.7c13.5,6.2,14.8,19.3,26.3,23.4
+			c13.7,3.8,25,0.3,32.2-10.3L144.7,149z"/>
+		<path fill="#FFCC00" d="M184,108.2c-14-8.3-15-17.7-14.1-27.6c0.9-13.9,18-17.8,23.7-30.8c6.2,13.5,19.3,14.8,23.4,26.3
+			c3.8,13.7,0.3,25-10.3,32.2L184,108.2z"/>
+		<path fill="#FFCC00" d="M185.5,208.5c-14,8.3-15,17.7-14.1,27.6c0.9,13.9,18,17.8,23.7,30.8c6.2-13.5,19.3-14.8,23.4-26.3
+			c3.8-13.7,0.3-25-10.3-32.2L185.5,208.5z"/>
+		<path fill="#FFCC00" d="M230.2,122.1c-0.2-16.2,7.2-22,16.1-26.4c12.3-6.5,24.6,6.1,38.6,4.1c-8.2,12.3-2.6,24.2-10.2,33.7
+			c-9.7,10.4-21.2,13.3-32.8,8L230.2,122.1z"/>
+		<path fill="#FFCC00" d="M145.4,175.8c-14.4-7.6-22.9-3.6-30.9,2.4c-11.4,8-5.8,24.7-13.9,36.3c14.7-1.8,22.7,8.7,34.7,6.2
+			c13.7-3.9,21.5-12.8,22-25.6L145.4,175.8z"/>
+		<path fill="#FFCC00" d="M208.9,109c-8.4-13.9-4.9-22.7,0.5-31c7.3-11.8,24.3-7.2,35.4-16c-0.9,14.8,10,22.2,8.3,34.2
+			c-3.1,13.9-11.5,22.2-24.2,23.5L208.9,109z"/>
+		<path fill="#FFCC00" d="M163,198.2c-16.2,0.7-21.6,8.5-25.4,17.6c-5.7,12.7,7.5,24.2,6.4,38.3c11.8-9,24-4,33.1-12.2
+			c9.9-10.3,12.1-21.9,6.1-33.2L163,198.2z"/>
+		<path fill="#FFCC00" d="M242.3,177.9c14.8-6.8,23.1-2.3,30.7,4.1c10.9,8.6,4.4,25,11.9,37c-14.6-2.6-23.2,7.4-35,4.3
+			c-13.5-4.7-20.7-14-20.6-26.8L242.3,177.9z"/>
+		<path fill="#FFCC00" d="M158.9,122.2c1.1-16.2-6-22.4-14.6-27.3c-11.9-7.1-24.9,4.7-38.8,2c7.6,12.7,1.2,24.3,8.3,34.2
+			c9.1,11,20.4,14.5,32.3,9.8L158.9,122.2z"/>
+		<path fill="#FFCC00" d="M226.7,198.5c16.2,1.3,21.2,9.3,24.8,18.5c5.3,12.9-8.4,24-7.7,38.1c-11.5-9.4-23.9-4.8-32.6-13.3
+			c-9.5-10.6-11.3-22.3-4.9-33.4L226.7,198.5z"/>
+		<path fill="#FFCC00" d="M181.1,109.1c8.9-13.6,5.7-22.5,0.5-31c-6.9-12.1-24.1-8.1-34.8-17.2c0.4,14.8-10.8,21.8-9.5,33.9
+			c2.6,14,10.7,22.6,23.4,24.3L181.1,109.1z"/>
+		<path fill="#2B1100" d="M252.1,158.2c0,31.8-25.7,57.5-57.5,57.5c-31.8,0-57.5-25.7-57.5-57.5v0c0-31.8,25.7-57.5,57.5-57.5
+			C226.4,100.7,252.1,126.5,252.1,158.2L252.1,158.2z"/>
+	</g>
+</g>
+</svg>
