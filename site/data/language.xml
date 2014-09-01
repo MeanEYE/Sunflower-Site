@@ -3,8 +3,7 @@
 	<language name="English" short="en" default="yes">
 		<constant name="site_title">Sunflower</constant>
 		<constant name="copyright"><![CDATA[Copyright &copy; 2014. by Mladen Mijatov and contributors.]]></constant>
-		<constant name="logo_copyright">
-			All product names used in this website are trademarks of their respective owners, which are in no way associated or affiliated with Sunflower or people involved with the project. These trademarks of other manufacturers are used solely to identify the products of those manufacturers.</constant>
+		<constant name="logo_copyright">All product names used in this website are trademarks of their respective owners, which are in no way associated or affiliated with Sunflower or people involved with the project. These trademarks of other manufacturers are used solely to identify the products of those manufacturers.</constant>
 		<constant name="license"><![CDATA[Released under GNU General Public License.]]></constant>
 
 		<constant name="software">Sunflower</constant>
@@ -41,7 +40,7 @@
 		<constant name="feature_sessions">Sessions</constant>
 		<constant name="feature_emblems">Emblems</constant>
 		<constant name="feature_terminal">Built-in terminal</constant>
-		<constant name="feature_threading">Mutlithreading</constant>
+		<constant name="feature_threading">Multithreading</constant>
 		<constant name="feature_python">Python and GTK+</constant>
 		<constant name="feature_keyboard">Keyboard oriented</constant>
 
