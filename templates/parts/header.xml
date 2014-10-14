@@ -46,6 +46,9 @@
 					>
 					<cms:text constant="menu_screenshots"/>
 				</a>
+				<a href="https://groups.google.com/forum/#!forum/sunflower-fm" target="_blank">
+					<cms:text constant="menu_mailing_list"/>
+				</a>
 				<a
 					href="url_Make('', 'contact')"
 					class="$section == 'contact' ? 'active' : false"

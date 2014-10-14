@@ -17,6 +17,7 @@
 		<constant name="menu_screenshots">Screenshots</constant>
 		<constant name="menu_contact">Contact</constant>
 		<constant name="menu_bugs">Bugs</constant>
+		<constant name="menu_mailing_list">Mailing list</constant>
 
 		<constant name="label_call_to_action">Download</constant>
 		<constant name="label_version">Current version:</constant>
