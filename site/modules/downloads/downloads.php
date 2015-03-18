@@ -76,7 +76,7 @@ class downloads extends Module {
 	 * Parse directory structure and get downloadable files.
 	 */
 	private function loadContent() {
-		$expression = 
+		$expression =
 			'/sunflower-'.  // match only right files
 			'(\d+\.\d+\w?)[\.-](\d+)'.  // version
 			'(?:-(\d)+)?'.  // package build number
@@ -221,7 +221,7 @@ class downloads extends Module {
 						break;
 					}
 				break;
-			
+
 			default:
 				$version = $this->version_list[$build];
 				$result = "sunflower-{$version}-{$build}.tgz";
@@ -257,7 +257,7 @@ class downloads extends Module {
 		// check if build number was specififed
 		if (isset($tag_params['build']))
 			$build_number = fix_id($tag_params['build']);
-		
+
 		// get highest build number
 		if (!in_array($build, $builds)) {
 			rsort($builds);
@@ -327,7 +327,7 @@ class downloads extends Module {
 		$build_number = null;
 		if (isset($tag_params['build']))
 			$build_number = fix_id($tag_params['build']);
-		
+
 		// get highest build number
 		if (!in_array($build_number, $builds)) {
 			rsort($builds);
