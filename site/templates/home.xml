@@ -15,7 +15,7 @@
 
 			<main>
 				<!-- Headline article and video -->
-				<section id="headline">
+				<section id="headline" cms:skip_cache="1">
 					<cms:module
 						name="articles"
 						action="show"
@@ -30,14 +30,13 @@
 					/>
 				</section>
 
-				<section id="video">
-					<div id="video_container"/>
+				<section id="video" cms:skip_cache="1">
 					<cms:module
 						name="youtube"
 						action="show"
 						random="1"
 						embed="1"
-						target="video_container"
+						player_id="video_container"
 						theme="light"
 						autohide="0"
 						show_related="0"

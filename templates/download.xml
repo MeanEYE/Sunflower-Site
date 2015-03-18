@@ -44,7 +44,7 @@
 				<section id="versions">
 					<h2><cms:text constant="title_versions"/></h2>
 
-					<table>
+					<table cms:skip_cache="1">
 						<tr>
 							<th><cms:text constant="column_version"/></th>
 							<th><cms:text constant="column_build"/></th>
