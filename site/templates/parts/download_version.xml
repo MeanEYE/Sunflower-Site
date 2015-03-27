@@ -3,7 +3,7 @@
 <document>
 	<tr
 		class="$params['selected'] ? 'active' : false"
-		cms:eval="class"
+		cms:optional="class"
 		>
 		<td>
 			<a
