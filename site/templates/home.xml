@@ -45,6 +45,15 @@
 					/>
 				</section>
 
+				<!-- News and annoucements -->
+				<section id="news" cms:skip_cache="1">
+					<cms:module
+						name="news"
+						action="show_list"
+						template="parts/news_item.xml"
+					/>
+				</section>
+
 				<!-- Screenshots-->
 				<section id="screenshots">
 					<h2><cms:text constant="title_screenshots"/></h2>
