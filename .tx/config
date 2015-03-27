@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+
+[sunflower.web-site]
+file_filter = site/data/language_<lang>.json
+source_lang = en
+type = KEYVALUEJSON
