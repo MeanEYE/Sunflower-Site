@@ -15,4 +15,7 @@
 	<section name="contact">
 		<language name="all" file="contact.xml"/>
 	</section>
+	<section name="news">
+		<language name="all" file="news.xml"/>
+	</section>
 </document>

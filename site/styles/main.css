@@ -25,3 +25,22 @@ h1, h2, h3, h4, h5 {
 	font-family: 'Roboto Condensed';
 	line-height: 100%;
 }
+
+code {
+	display: inline-block;
+
+	padding-left: 2px;
+	padding-right: 2px;
+
+	border: 1px solid #CBCBCB;
+	border-radius: 3px;
+	background-color: #FDFDFD;
+
+	font-size: 0.9em;
+}
+
+pre code {
+	display: block;
+	padding: 5px;
+	font-size: 1em;
+}

@@ -96,6 +96,23 @@ section#platforms small {
 	opacity: 0.5;
 }
 
+section#news_item {
+	display: inline-block;
+	vertical-align: top;
+	width: 558px;
+	min-height: 300px;
+
+	margin-right: 20px;
+	position: relative;
+}
+
+section#news_list {
+	display: inline-block;
+	vertical-align: top;
+	width: 558px;
+	min-height: 300px;
+}
+
 /**
  * Contact form
  */
@@ -228,6 +245,115 @@ div#video_container {
 }
 
 /**
+ * News
+ */
+section.news {
+	display: inline-block;
+	vertical-align: top;
+	width: calc((100% - 90px - 6px - 40px) / 3);  /* padding: 90px, border: 6px, margin: 40px */
+	height: 200px;
+
+	position: relative;
+	overflow: hidden;
+}
+
+section.news:nth-of-type(2) {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+section.news:after {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	left: 0px;
+	bottom: 0px;
+	content: '';
+
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+section.news h4,
+section#news_item h1 {
+	position: relative;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+section.news h4:after,
+section#news_item h1:after {
+	content: attr(data-time) '\a' attr(data-date) ;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+
+	color: #333333;
+	opacity: 0.5;
+	font-size: 0.7rem;
+	font-family: 'Roboto';
+	line-height: 100%;
+	white-space: pre;
+	text-align: right;
+}
+
+section.news p {
+	margin: 0px;
+	padding-top: 10px;
+	font-size: 0.9rem;
+}
+
+section.news > a {
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+
+	z-index: 1;
+}
+
+section#news_list table {
+	width: 100%;
+
+	margin: 0px;
+	margin-top: 1em;
+	padding: 0px;
+	padding-bottom: 3px;
+
+	border-spacing: 0px;
+	border-bottom: 1px solid #2265ca;
+	border-bottom: 1px solid rgba(34, 101, 202, 0.3);
+}
+
+section#news_list table th {
+	padding: 3px 5px;
+
+	text-align: left;
+	border-bottom: 1px solid #2265ca;
+	border-bottom: 1px solid rgba(34, 101, 202, 0.3);
+}
+
+section#news_list table tr.active {
+	background-color: #f0f0f0;
+}
+
+section#news_list table tr.active td:first-of-type:before {
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	content: '';
+
+	border: 5px solid transparent;
+	border-left-color: #2265ca;
+}
+
+section#news_list table td {
+	padding: 3px 5px;
+}
+
+section#news_list table a {
+	text-decoration: none;
+}
+
+/**
  * Gallery
  */
 div.gallery a.screenshot {
@@ -311,7 +437,6 @@ a:hover {
 /**
  * Platforms
  */
-
 a.platform {
 	display: inline-block;
 	width: calc((558px - 10px) / 6);
@@ -487,7 +612,7 @@ section#versions table {
 	width: 100%;
 
 	margin: 0px;
-	margin-top: 30px;
+	margin-top: 1em;
 	padding: 0px;
 	padding-bottom: 3px;
 

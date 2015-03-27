@@ -50,6 +50,14 @@
 					<cms:text constant="menu_mailing_list"/>
 				</a>
 				<a
+					href="url_Make('', 'news')"
+					class="$section == 'news' ? 'active' : false"
+					cms:optional="class"
+					cms:eval="href"
+					>
+					<cms:text constant="menu_news"/>
+				</a>
+				<a
 					href="url_Make('', 'contact')"
 					class="$section == 'contact' ? 'active' : false"
 					cms:optional="class"

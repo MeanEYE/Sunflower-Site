@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
+<document>
+	<section class="news">
+		<h4
+			data-date="$params['date']"
+			data-time="$params['time']"
+			cms:eval="data-date,data-time"
+			>
+			<cms:var name="$params['title'][$language]"/>
+		</h4>
+		<cms:markdown param="content" multilanguage="yes"/>
+
+		<a
+			href="url_Make($params['id'], 'news')"
+			cms:eval="href"
+			>
+			<cms:text constant="read_news"/>
+		</a>
+	</section>
+</document>

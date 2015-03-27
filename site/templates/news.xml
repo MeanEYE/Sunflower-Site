@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/template.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title>
+				<cms:text constant="site_title"/>
+				<cms:raw text=" - "/>
+				<cms:text constant="menu_news"/>
+			</title>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body>
+			<cms:template file="parts/header.xml"/>
+
+			<main>
+				<section id="news_item">
+					<cms:if condition="!is_numeric($action)">
+						<cms:module
+							name="news"
+							action="show"
+							template="parts/news_full.xml"
+							/>
+					</cms:if>
+					<cms:if condition="is_numeric($action)">
+						<cms:module
+							name="news"
+							action="show"
+							template="parts/news_full.xml"
+							id="$action"
+							cms:eval="id"
+							/>
+					</cms:if>
+				</section>
+
+				<section id="news_list" cms:skip_cache="1">
+					<h2><cms:text constant="title_news"/></h2>
+
+					<table cms:skip_cache="1">
+						<tr>
+							<th><cms:text constant="column_title"/></th>
+							<th><cms:text constant="column_timestamp"/></th>
+						</tr>
+						<cms:module
+							name="news"
+							action="show_list"
+							template="parts/news_list_item.xml"
+							limit="20"
+							/>
+					</table>
+				</section>
+			</main>
+
+			<cms:template file="parts/footer.xml"/>
+		</body>
+	</html>
+</document>

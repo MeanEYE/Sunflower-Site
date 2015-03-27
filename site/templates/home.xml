@@ -46,13 +46,14 @@
 				</section>
 
 				<!-- News and annoucements -->
-				<section id="news" cms:skip_cache="1">
+				<div id="news" cms:skip_cache="1">
 					<cms:module
 						name="news"
 						action="show_list"
 						template="parts/news_item.xml"
-					/>
-				</section>
+						limit="3"
+						/>
+				</div>
 
 				<!-- Screenshots-->
 				<section id="screenshots">

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
+<document>
+	<tr
+		class="$action == $params['id'] ? 'active' : false"
+		cms:optional="class"
+		>
+		<td>
+			<a
+				href="url_Make($params['id'], 'news')"
+				cms:eval="href"
+				>
+				<cms:var param="title" multilanguage="yes"/>
+			</a>
+		</td>
+		<td>
+			<cms:var param="time"/>
+			<cms:raw text=" - "/>
+			<cms:var param="date"/>
+		</td>
+	</tr>
+</document>
