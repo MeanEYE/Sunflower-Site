@@ -54,9 +54,7 @@ nav#main a {
 	display: inline-block;
 
 	margin-left: 2px;
-	padding: 7px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 7px 12px;
 
 	border-radius: 3px;
 
