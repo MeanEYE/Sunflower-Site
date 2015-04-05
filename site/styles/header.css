@@ -8,20 +8,11 @@
 
 header {
 	display: block;
+	position: relative;
+	padding: 10px calc((100vw - 1180px) / 2);
 
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 	background-color: #17458a;
-}
-
-header div.wrap {
-	display: block;
-	width: 1180px;
-
-	position: relative;
-
-	margin-left: auto;
-	margin-right: auto;
-	padding: 10px;
 }
 
 header a.logo {
@@ -55,7 +46,7 @@ nav#main {
 	display: block;
 
 	position: absolute;
-	right: 0px;
+	right: calc((100vw - 1180px) / 2);
 	bottom: 5px;
 }
 
@@ -85,4 +76,79 @@ nav#main a:hover {
 	background-color: #2265ca;
 	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
 	transform: translateY(-5px);
+}
+
+/**
+ * Language menu
+ */
+nav#language {
+	display: block;
+
+	position: absolute;
+	right: calc((100vw - 1180px) / 2);
+	top: 5px;
+
+	border: 1px solid transparent;
+	background-image: url(../../modules/backend/images/language_menu.svg);
+	background-position: left 10px;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+
+	z-index: 100;
+	opacity: 0.5;
+	transition: all 0.3s;
+}
+
+body.rtl nav#language {
+	right: auto;
+	left: calc((100vw - 1180px) / 2);
+}
+
+nav#language:hover {
+	border: 1px solid #595959;
+	background-color: #b4b4b4;
+	background-image: none;
+	opacity: 1;
+}
+
+nav#language a {
+	display: block;
+	max-height: 0px;
+
+	padding: 0px 17px;
+
+	color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+
+	transition: 0.3s all;
+	overflow: hidden;
+	text-align: center;
+}
+
+nav#language a:hover {
+	background-color: white;
+}
+
+nav#language:hover a {
+	max-height: 50px;
+
+	padding: 10px;
+	padding-left: 17px;
+	padding-right: 17px;
+
+	color: #333333;
+}
+
+nav#language a.active {
+	max-height: 50px;
+
+	padding: 10px;
+	padding-left: 17px;
+	padding-right: 17px;
+
+	color: white;
+}
+
+nav#language:hover a.active {
+	color: black;
 }

@@ -2,33 +2,32 @@
 <!DOCTYPE document SYSTEM "../../units/schema/template.dtd">
 <document>
 	<header>
-		<div class="wrap">
-			<!-- Logo -->
-			<a href="url_Make()" class="logo" cms:eval="href">
-				<span><cms:text constant="software"/></span>
-				<cms:text constant="description"/>
-			</a>
+		<!-- Logo -->
+		<a href="url_Make()" class="logo" cms:eval="href">
+			<span><cms:text constant="software"/></span>
+			<cms:text constant="description"/>
+		</a>
 
-			<!-- Main menu -->
-			<nav id="main">
-				<a
-					href="url_Make('', 'download')"
-					class="$section == 'download' ? 'active' : false"
-					cms:optional="class"
-					cms:eval="href"
-					>
-					<cms:text constant="menu_download"/>
-				</a>
-				<a href="https://github.com/MeanEYE/Sunflower" target="_blank">
-					<cms:text constant="menu_source"/>
-				</a>
-				<a href="https://transifex.com/projects/p/sunflower/" target="_blank">
-					<cms:text constant="menu_translations"/>
-				</a>
-				<a href="https://github.com/MeanEYE/Sunflower/issues" target="_blank">
-					<cms:text constant="menu_bugs"/>
-				</a>
-				<!--
+		<!-- Main menu -->
+		<nav id="main">
+			<a
+				href="url_Make('', 'download')"
+				class="$section == 'download' ? 'active' : false"
+				cms:optional="class"
+				cms:eval="href"
+				>
+				<cms:text constant="menu_download"/>
+			</a>
+			<a href="https://github.com/MeanEYE/Sunflower" target="_blank">
+				<cms:text constant="menu_source"/>
+			</a>
+			<a href="https://transifex.com/projects/p/sunflower/" target="_blank">
+				<cms:text constant="menu_translations"/>
+			</a>
+			<a href="https://github.com/MeanEYE/Sunflower/issues" target="_blank">
+				<cms:text constant="menu_bugs"/>
+			</a>
+			<!--
 				<a
 					href="url_Make('', 'plugins')"
 					class="$section == 'plugins' ? 'active' : false"
@@ -38,34 +37,40 @@
 					<cms:text constant="menu_plugins"/>
 				</a>
 				-->
-				<a
-					href="url_Make('', 'screenshots')"
-					class="$section == 'screenshots' ? 'active' : false"
-					cms:optional="class"
-					cms:eval="href"
-					>
-					<cms:text constant="menu_screenshots"/>
-				</a>
-				<a href="https://groups.google.com/forum/#!forum/sunflower-fm" target="_blank">
-					<cms:text constant="menu_mailing_list"/>
-				</a>
-				<a
-					href="url_Make('', 'news')"
-					class="$section == 'news' ? 'active' : false"
-					cms:optional="class"
-					cms:eval="href"
-					>
-					<cms:text constant="menu_news"/>
-				</a>
-				<a
-					href="url_Make('', 'contact')"
-					class="$section == 'contact' ? 'active' : false"
-					cms:optional="class"
-					cms:eval="href"
-					>
-					<cms:text constant="menu_contact"/>
-				</a>
-			</nav>
-		</div>
+			<a
+				href="url_Make('', 'screenshots')"
+				class="$section == 'screenshots' ? 'active' : false"
+				cms:optional="class"
+				cms:eval="href"
+				>
+				<cms:text constant="menu_screenshots"/>
+			</a>
+			<a href="https://groups.google.com/forum/#!forum/sunflower-fm" target="_blank">
+				<cms:text constant="menu_mailing_list"/>
+			</a>
+			<a
+				href="url_Make('', 'news')"
+				class="$section == 'news' ? 'active' : false"
+				cms:optional="class"
+				cms:eval="href"
+				>
+				<cms:text constant="menu_news"/>
+			</a>
+			<a
+				href="url_Make('', 'contact')"
+				class="$section == 'contact' ? 'active' : false"
+				cms:optional="class"
+				cms:eval="href"
+				>
+				<cms:text constant="menu_contact"/>
+			</a>
+		</nav>
+
+		<nav id="language">
+			<cms:module
+				name="language_menu"
+				action="print"
+				/>
+		</nav>
 	</header>
 </document>
