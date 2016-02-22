@@ -1,0 +1,24 @@
+---
+- name: Creating database for domain content management system
+  command: "{{ plesk_database }}
+      --create {{ database.name }}
+      -type {{ database.type }}
+      -domain {{ site.domain }}
+      -add_user {{ database.username }}
+      -passwd {{ database.password }}"
+  args:
+    chdir: "{{ plesk_command_directory }}"
+    creates: "{{ mysql_directory }}/{{ database.name.replace('-', '@002d') }}"
+  when: site.subdomain is not defined
+
+- name: Creating database for subdomain content management system
+  command: "{{ plesk_database }}
+      --create {{ database.sub_name }}
+      -type {{ database.type }}
+      -domain {{ site.domain }}
+      -add_user {{ database.username }}
+      -passwd {{ database.password }}"
+  args:
+    chdir: "{{ plesk_command_directory }}"
+    creates: "{{ mysql_directory }}/{{ database.sub_name.replace('-', '@002d') }}"
+  when: site.subdomain is defined
