@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
 <document>
-	<a
-		href="$params['url']"
-		title="$params['platform_name']"
+	<li
 		class="'platform '.$params['platform']"
-		cms:eval="href,title,class"
+		cms:eval="class"
 		>
-		<cms:var name="$params['platform_name']"/>
-	</a>
+		<a
+			href="$params['url']"
+			title="$params['platform_name']"
+			class="download"
+			cms:eval="href,title"
+			>
+			<cms:var name="$params['platform_name']"/>
+		</a>
+		<a
+			href="$params['signature']"
+			class="signature"
+			cms:eval="href"
+			>
+			<cms:text constant="download_signature"/>
+		</a>
+	</li>
 </document>

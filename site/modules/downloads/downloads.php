@@ -98,9 +98,9 @@ class downloads extends Module {
 
 				// treat different extensions differently
 				switch($matches[6]) {
-					case '.tgz.asc':
-					case '.deb.asc':
-					case '.rpm.asc':
+					case '.tgz.sig':
+					case '.deb.sig':
+					case '.rpm.sig':
 						$key_name = substr($file_name, 0, strlen($file_name) - 4);
 
 						// make sure storage array exists
@@ -108,7 +108,7 @@ class downloads extends Module {
 							$data[$build][$key_name] = array();
 
 						// store signature to file name
-						$data[$build][$key_name]['signature'] = file_get_contents($this->file_path.'/'.$file_name);
+						$data[$build][$key_name]['signature'] = url_GetFromFilePath($this->file_path.'/'.$file_name);
 						break;
 
 					case '.tgz.sha256':
@@ -122,21 +122,6 @@ class downloads extends Module {
 
 						// store signature to file name
 						$data[$build][$key_name]['hash'] = file_get_contents($this->file_path.'/'.$file_name);
-						$data[$build][$key_name]['hash_type'] = 'sha256';
-						break;
-
-					case '.tgz.md5':
-					case '.deb.md5':
-					case '.rpm.md5':
-						$key_name = substr($file_name, 0, strlen($file_name) - 4);
-
-						// make sure storage array exists
-						if (!isset($data[$build][$key_name]))
-							$data[$build][$key_name] = array();
-
-						// store signature to file name
-						$data[$build][$key_name]['hash'] = file_get_contents($this->file_path.'/'.$file_name);
-						$data[$build][$key_name]['hash_type'] = 'md5';
 						break;
 
 					default:

@@ -7,15 +7,6 @@
 
 		<!-- Social media icons -->
 		<div class="social">
-			<a href="bitcoin:13CWnssUxzZoTkvikJnXRB7ddDL39mMNS6" class="bitcoin">
-				<img
-					src="_BASEURL.'/site/images/bitcoin.svg'"
-					width="30"
-					height="30"
-					alt="Bitcoin"
-					cms:eval="src"
-					/>
-			</a>
 			<a href="https://github.com/MeanEYE/Sunflower" class="github">
 				<svg viewBox="0 0 32 32">
 					<use xlink:href="#icon-github"/>
